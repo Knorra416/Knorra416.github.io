@@ -1,5 +1,7 @@
 ---
-layout: default
+layout: page
+title: Index
+permalink:/index/
 ---
 
 <div class="posts">
