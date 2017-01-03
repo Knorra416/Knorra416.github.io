@@ -10,6 +10,10 @@ output:
     highlight: pygments
     theme: spacelab
 ---
+
+##Description
+
+This is my final project for a Bayesian Statistics course from Coursera. I had to create a bayesian predictive regression model that would predict the audience score of a movie given a host of review metrics.
  
 ## Setup
  
