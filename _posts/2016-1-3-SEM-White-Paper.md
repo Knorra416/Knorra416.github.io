@@ -50,6 +50,8 @@ header-includes:
  
    Papayoanou, P. (2010). Game Theory for Business: A Primer in Strategic Gaming. Probabilistic Publishing.
  
- 
+**Authors**
+
+Fred Askham, Mike Broom, Alex Knorr, Jeff van Geete
  
  
