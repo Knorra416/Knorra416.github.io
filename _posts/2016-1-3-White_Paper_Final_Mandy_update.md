@@ -1,6 +1,6 @@
 ---
-layout: default
-title: Smarter SEM Bidding Optimizing Paid Search Through Dominant Game Theory Strategies
+layout: post
+title: Smarter SEM Bid Optimizing Through Dominant Game Theory Strategies
 author: Fred Askham, Mike Broom, Alex Knorr, Jeff van Geete
 status: publish
 published: true
