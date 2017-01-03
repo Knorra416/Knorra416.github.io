@@ -5,7 +5,6 @@ author: Fred Askham, Mike Broom, Alex Knorr, Jeff van Geete
 status: publish
 published: true
 output: 
-  pdf_document:
   latex_engine: xelatex
 mainfont: Times New Roman
 fontsize: 12pt
