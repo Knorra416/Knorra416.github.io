@@ -3,13 +3,18 @@
 #
 
 # Name of your site (displayed in the header)
-name: Your Name
+name: Alex Knorr
 
 # Short bio or description (displayed in the header)
-description: Web Developer from Somewhere
+description: As a Data Scientist I conduct hypothesis testing, generate forecasts, automate data flows, and develop client-facing analytics products. 
+  I have a personal focus on applying Bayesian philosophies to business solutions and using machine learning to assist in media optimization.
+   
+Prior to the move to IMM, I was a Research Associate at BBC Research & Consulting where I worked on disparity study research. 
+I have published an economic study on the effects of commodity shocks on maritime piracy. 
+I received my BA in business economics from Seattle University and my MA in Economics from University of Colorado – Denver. 
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
+avatar: https://avatars1.githubusercontent.com/u/13875283?v=3&amp
 
 #
 # Flags below are optional
@@ -18,12 +23,12 @@ avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/je
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email:
+  email: alexander.knorr416@gmail.com
   facebook:
   flickr:
   github: barryclark/jekyll-now
   instagram:
-  linkedin:
+  linkedin: https://www.linkedin.com/in/alex-knorr-66765535
   pinterest:
   rss: # just type anything here for a working RSS icon
   twitter: jekyllrb
