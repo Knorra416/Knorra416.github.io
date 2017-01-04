@@ -47,7 +47,7 @@ An examination of the variables used in the models reveals that most are not ext
  
 For consistency, we specified the same variables for both the pitching and fielding models using the following model specification:
  
-$$Log(Salary)_i = a+\beta_1*WAR_i + \beta_2*Experience_i + \beta_3*Experience_i^2 + \beta_4*Age Start_i + \epsilon_i$$
+Log(Salary)_i = a+ beta_1*WAR_i + beta_2*Experience_i + beta_3*(Experience_i)^2 + beta_4*Age Start_i + epsilon_i
  
  
 The independent variable is the log of the player's 2014 salary. $B_1$ is the coefficient on WAR's impact on a player's salary on average. $B_2$ allows salary to increase as a players experience (the difference in years between their age in 2014 and the age they began playing in the MLB) and $B_3$ allows decreasing returns to salary as a player ages. Ultimately, this models a function that may exhibit a decreasing salary as a player grows older in the latter years of their career. $B_4$ is the coefficient on the age at which a player enters the MLB, which makes our experience estimates conditional on the age at which they began gaining MLB experience. The first model we ran was on fielder players only:
@@ -89,10 +89,6 @@ By taking advantage of an advanced sabermetric measurement like WAR, we are able
 ## Authors
 
 Alexander Knorr, Nick Vedder, Sebastian Kadamany
- 
-## Additional Graphs and Tables
- 
-![plot of chunk unnamed-chunk-5](/figures/unnamed-chunk-5-1.png)![plot of chunk unnamed-chunk-5](/figures/unnamed-chunk-5-2.png)
  
 ### Table 1 Fielder Top 100 List
 
