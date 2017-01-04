@@ -64,7 +64,7 @@ The independent variable is the log of the player's 2014 salary. beta_1 is the c
 Here we can see that an additional unit of WAR can increase a player's salary by almost 30% exp(beta_1)-1=0.291. We also see that experience increases a player's salary by approximately 0.4 log points but also indicates diminishing returns to experience for the coefficient on beta_3 of -0.01 log points. Using the median fielder experience of 5 years, this suggests that a player's salary is only predicted to increase by 29% exp(beta_2-2*beta_3)-1 with an additional year of experience. These variables are all significant at the 1% level. It appears beta_4 is negative which means players who start at an older age typically earn less over their career, however, this coefficient is somewhat insignificant. We see similar results for pitchers, however, using the pitcher - specific WAR score:
  
 {% highlight r %}
-|            | Estimate| Std. Error| t value| Pr(>&#124;t&#124;)|
+|            | Estimate| Std. Error| t value| Pr(>|t|;t&#124;)|
 |:-----------|--------:|----------:|-------:|------------------:|
 |(Intercept) |   11.350|      0.439|  25.874|              0.000|
 |WAR         |    0.300|      0.031|   9.631|              0.000|
