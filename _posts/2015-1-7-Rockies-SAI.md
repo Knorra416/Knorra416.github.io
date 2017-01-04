@@ -4,7 +4,6 @@ title: "Waging WAR: MLB Player Valuation Using Advanced Metrics"
 status: publish
 published: true
 author: Alexander Knorr, Nick Vedder, Sebastian Kadamany
-output: pdf_document
 ---
  
 
