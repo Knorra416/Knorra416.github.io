@@ -63,7 +63,7 @@ The independent variable is the log of the player's 2014 salary. beta_1 is the c
 
 Here we can see that an additional unit of WAR can increase a player's salary by almost 30% exp(beta_1)-1=0.291. We also see that experience increases a player's salary by approximately 0.4 log points but also indicates diminishing returns to experience for the coefficient on beta_3 of -0.01 log points. Using the median fielder experience of 5 years, this suggests that a player's salary is only predicted to increase by 29% exp(beta_2-2*beta_3)-1 with an additional year of experience. These variables are all significant at the 1% level. It appears beta_4 is negative which means players who start at an older age typically earn less over their career, however, this coefficient is somewhat insignificant. We see similar results for pitchers, however, using the pitcher - specific WAR score:
  
-
+{% highlight r %}
 |            | Estimate| Std. Error| t value| Pr(>&#124;t&#124;)|
 |:-----------|--------:|----------:|-------:|------------------:|
 |(Intercept) |   11.350|      0.439|  25.874|              0.000|
@@ -71,6 +71,7 @@ Here we can see that an additional unit of WAR can increase a player's salary by
 |age.start   |    0.050|      0.017|   2.941|              0.003|
 |exp         |    0.399|      0.033|  12.228|              0.000|
 |exp2        |   -0.014|      0.002|  -6.170|              0.000|
+{% endhighlight %}
  
 For pitchers, a unit increase in WAR will increase salary by 35% exp(beta_1)-1=0.3501. We see fairly similar estimates for beta_2 and  beta_3 for pitchers compared to the fielder model. Using the same analysis for understating the effect of experience as before, a pitcher at the median pitcher experience of 4 will only receive a 21% boost in salary with an additional year of experience. Here, the Age Start variable appears to be significant and positive. This suggests that pitchers who start in the MLB at an older age earn higher salaries. This may be an adjustment made for pitchers who have more minor league experience. All variables in the pitching model are significant at the 1% level.
  
@@ -91,7 +92,7 @@ By taking advantage of an advanced sabermetric measurement like WAR, we are able
 Alexander Knorr, Nick Vedder, Sebastian Kadamany
  
 ### Table 1 Fielder Top 100 List
-
+{% highlight r %}
 |Player_Name        | Experience|    WAR|Salary   |Predicted_Salary | SAI_Index|
 |:------------------|----------:|------:|:--------|:----------------|---------:|
 |Rene Rivera        |         10|  3.190|$506400  |$8565424.18      |    16.914|
@@ -194,9 +195,9 @@ Alexander Knorr, Nick Vedder, Sebastian Kadamany
 |Andrew Brown       |          4| -0.090|$538045  |$949054.27       |     1.764|
 |Matt Dominguez     |          3|  0.325|$510100  |$895849.65       |     1.756|
 |Travis Snider      |          6|  0.370|$1200000 |$2103519.47      |     1.753|
- 
+{% endhighlight %} 
 ### Table 2 Pitcher Top 100 List
-
+{% highlight r %}
 |Player_Name        | Experience|    WAR|Salary   |Predicted_Salary | SAI_Index|
 |:------------------|----------:|------:|:--------|:----------------|---------:|
 |Joe Beimel         |         13|  0.955|$850000  |$6539928.09      |     7.694|
@@ -299,3 +300,4 @@ Alexander Knorr, Nick Vedder, Sebastian Kadamany
 |Cody Allen         |          2|  1.685|$515400  |$930555.99       |     1.806|
 |Brad Brach         |          3|  0.200|$509500  |$915678.01       |     1.797|
 |Chris Sale         |          4|  6.250|$3500000 |$6243883.38      |     1.784|
+{% endhighlight %} 
