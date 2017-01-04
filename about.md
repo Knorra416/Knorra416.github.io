@@ -14,6 +14,10 @@ Prior to the move to IMM, I was a Research Associate at BBC Research & Consultin
 
 [Brief Piracy Paper Abstract](http://piracy-studies.org/economic-factors-for-piracy-the-effect-of-commodity-price-shocks/)
 
+### Resume
+
+Find my resume [here](/images/Resume_Alex_12_30_2016.pdf)
+
 ### Contact me
 
 [alexander.knorr416@gmail.com](mailto:alexander.knorr416@gmail.com)
