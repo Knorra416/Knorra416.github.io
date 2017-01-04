@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Waging WAR: MLB Player Valuation Using Advanced Metrics"
 status: publish
 published: true
@@ -65,7 +66,7 @@ Here we can see that an additional unit of WAR can increase a player's salary by
 
 |            | Estimate| Std. Error| t value| Pr(>&#124;t&#124;)|
 |:-----------|--------:|----------:|-------:|------------------:|
-|(Intercept) |   11.350|      0.439|- 25.874|              0.000|
+|(Intercept) |   11.350|      0.439|  25.874|              0.000|
 |WAR         |    0.300|      0.031|   9.631|              0.000|
 |age.start   |    0.050|      0.017|   2.941|              0.003|
 |exp         |    0.399|      0.033|  12.228|              0.000|
