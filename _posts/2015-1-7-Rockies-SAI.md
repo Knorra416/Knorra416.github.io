@@ -65,7 +65,7 @@ Here we can see that an additional unit of WAR can increase a player's salary by
 
 |            | Estimate| Std. Error| t value| Pr(>&#124;t&#124;)|
 |:-----------|--------:|----------:|-------:|------------------:|
-|(Intercept) |   11.350|      0.439|  25.874|              0.000|
+|(Intercept) |   11.350|      0.439|- 25.874|              0.000|
 |WAR         |    0.300|      0.031|   9.631|              0.000|
 |age.start   |    0.050|      0.017|   2.941|              0.003|
 |exp         |    0.399|      0.033|  12.228|              0.000|
@@ -81,19 +81,19 @@ Tables 1 and 2 at the end of this document present our top 100 players lists for
  
 Our lists are powerful tools for identifying undervalued players, particularly rookies. For example, Mike Trout just signed a 6-year contract with the Angels for $5,250,000 for 2015. Based on his median WAR value of 8.56 our model would predict his salary at $7,861,294.66, which is substantially higher than what Trout received indicating that the Angels made a very good deal with this contract.  Other evidence pointing to the quality of our analysis would be the case of Josh Donaldson. Donaldson made $500,000 in 2014 with the Oakland Athletics and was signed to the Toronto Blue Jays in 2015 for $4.3 million. Based on his WAR score of 7.33 our model predicts his salary at $6,539,306.38. The Toronto Blue Jays have identified Josh Donaldson's contribution to the team and acquired him under his true value; another very good deal. Finally, our number one pick in the top 100 for fielders is Rene Rivera. A 2014 salary of $506,400 and a WAR score of 3.19 give Rivera a predicted salary of $8,565,424.18. His 10 years of experience contribute to this high salary in conjunction with a good WAR score, and show that his $1.2 million dollar contract to the Tampa Bay Rays is extremely undervaluing his abilities. The results and tables show that our model should perform very well at identifying rookies who are almost ending their rookie contracts; our predictions assume that players' salaries are adjusted on a yearly basis, which means that it will identify a large SAI for rookie players who provide wins to the team but are stuck in a similar contract with other average rookie players.
  
-##Conclusion
+## Conclusion
  
 By taking advantage of an advanced sabermetric measurement like WAR, we are able to accurately value and compare fielders and pitchers. Our team has determined that "value" is best understood as opportunities to acquire players under their perceived market value. Our SAI identifies the largest disparities between current salary and our prediction. The results are two top 100 lists of the greatest arbitrage opportunities for both fielders and pitchers. An quick examination of some of the top players in our list seem to indicate the accuracy of our results.  It is important to note there are some limitations of our approach. Pitchers are very hard to predict and our model seems to indicate that their performance has a lot to do with experience in addition to their WAR value. To further refine our model we would be interested in including contract length and time until free agency for players. These are both important factors when determining the viability of acquiring a player. With these in mind we still consider our model to be a fantastic resource to examining the value of players and determining the ideal compensation for their contribution to the team. 
 
-##Authors
+## Authors
 
 Alexander Knorr, Nick Vedder, Sebastian Kadamany
  
-##Additional Graphs and Tables
+## Additional Graphs and Tables
  
 ![plot of chunk unnamed-chunk-5](/figures/unnamed-chunk-5-1.png)![plot of chunk unnamed-chunk-5](/figures/unnamed-chunk-5-2.png)
  
-###Table 1 Fielder Top 100 List
+### Table 1 Fielder Top 100 List
 
 |Player_Name        | Experience|    WAR|Salary   |Predicted_Salary | SAI_Index|
 |:------------------|----------:|------:|:--------|:----------------|---------:|
@@ -198,7 +198,7 @@ Alexander Knorr, Nick Vedder, Sebastian Kadamany
 |Matt Dominguez     |          3|  0.325|$510100  |$895849.65       |     1.756|
 |Travis Snider      |          6|  0.370|$1200000 |$2103519.47      |     1.753|
  
-###Table 2 Pitcher Top 100 List
+### Table 2 Pitcher Top 100 List
 
 |Player_Name        | Experience|    WAR|Salary   |Predicted_Salary | SAI_Index|
 |:------------------|----------:|------:|:--------|:----------------|---------:|
