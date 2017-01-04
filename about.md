@@ -16,7 +16,7 @@ Prior to the move to IMM, I was a Research Associate at BBC Research & Consultin
 
 ### Resume
 
-Find my resume [here](/images/Resume_Alex_12_30_2016.pdf)
+Find my resume [here](/images/Resume_Alex_12_31_2016_no_number.pdf)
 
 ### Contact me
 
