@@ -86,7 +86,7 @@ movies$summer_season[is.na(movies$summer_season)] <- "No"
 * * *
  
 ## Part 3: Exploratory data analysis
-### Table 3.1 Audience Score Summary Statistics
+Table 3.1 Audience Score Summary Statistics
 
 |   |audience_score |
 |:--|:--------------|
