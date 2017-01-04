@@ -7,11 +7,11 @@ output: pdf_document
 ---
  
 
-##Introduction
+## Introduction
  
 Baseball players are constantly evaluated on their performance by raw statistics. In recent years, more advanced statistics have identified true value in baseball players while highlight raw statistics that actually contribute wins for the team. Our project leverages one of these statistics, Wins Above Replacement (WAR) in order to estimate the true dollar amount of baseball players. We then use this to help identify undervalued players, ripe for contract bids. This is what management really wants to see: identification of low hanging fruit that provides the most value for the team. The following paper outlines our modeling technique and development of our Salary Arbitrage Index (SAI) which identifies severely undervalued players who will potentially provide the highest value in the MLB.
  
-##Data & Metrics
+## Data & Metrics
  
 Baseball may have very well been the pioneer of using different types of metrics in order to evaluate player performance dating back to Henry Chadwick in the 19th century. RBI, ERA, BA and BB are just a few simple metrics used today to evaluate players. However Baseball's metrics can also be a double edged sword. With so many metrics it is difficult to definitively determine the value of one player in comparison to another.  For example, this year's NL CY Young Award has three amazing pitchers who are arguably the "best" pitcher deserving of that award. Zack Greinke, Clayton Kershaw, and Jake Arrieta who could all arguably be deserving of the award depending on which metric is evaluated. Arrieta currently has the most wins, two shut-outs and a no hitter. Kershaw has the most strikeouts and innings played. Greinke in the meantime has the lowest ERA. Adding FIB and WHIP Metrics makes the decision even harder. By evaluating Wins Above Replacement (WAR) we are able to evaluate and compare players consistently.
  
@@ -28,7 +28,7 @@ These components are centered on the principle that runs scored lead to wins, fo
         
 In any case, our model goes beyond just WAR. As Economists we believe that value in terms of dollars and contract amounts is also important to the valuation of a player. These are the key components use in our analytic model.
  
-##Model & Methodology
+## Model & Methodology
  
 For our analysis, we choose to use a linear regression so that we may estimate the true worth of a player on a continuous basis. Our predicted player salaries will then inform how much of an arbitrage opportunity their might be for a given player so that a team may appropriately bid for new talent. To begin our analysis, we decided to limit the scope of player performance to the last 5 seasons (2010 - 2014). This still allows us to leverage 145,109 player - year observations but also removes any bias due to inflation in salaries or drastic changes in performance over long careers. Our analysis also removes players earning the rookie minimum salary in 2010 ($400,000) since it heavily skews the salary distribution and results in poor model fit. We also choose to stratify our analysis by analyzing pitchers separate from fielders. It is common knowledge that pitchers help teams produce wins in a different way than fielders. Simply put, fielders derive most of their value from scoring runs whereas pitchers derive most of their value from preventing runs. We also use this as an opportunity to utilize a pitcher specific WAR in our analysis as it is a better indicator of pitching performance.
  
@@ -75,7 +75,7 @@ For pitchers, a unit increase in WAR will increase salary by 35% $(exp(\beta_1)-
  
 Finally, our analysis concludes by ranking players based on our Salary Arbitrage Index (SAI). This index will take the expected salary value from the previous models for a given player and compute a ratio of the expected salary to the earned salary in 2014. The idea here is to find the largest disparity between predicted salary and actual salary, which acts as an arbitrage estimate for team management to make effective bids on a free agent. For instance, Mike Trout is expected to earn $7,861,294 per year currently but only received $1,000,000. This means that Mike Trout will have an SAI of 7.86. This puts Mike Trout 3rd on our top 100 list, which makes sense because he should be earning almost 8 times of what he made in 2014. Anecdotally, we can see why. The corresponding SAI for the top 100 batters and top 100 pitchers are discussed in the following section.
  
-##Results
+## Results
  
 Tables 1 and 2 at the end of this document present our top 100 players lists for both fielders and pitchers. These tables provide the name of the player, years of experience, 2014 salary, predicted salary, and finally our SAI value. From the previous section, the ranking of players is based on this SAI value. These lists present "value" using SAI by determining which players outperform their current salaries. By valuing players in this fashion we have identified opportunities to sign players which are currently undervalued by the overall market. Given our stratified model by pitcher and fielder, we have created two separate top 100 lists.  
  
