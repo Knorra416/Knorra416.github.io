@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Bayesian Modeling and Prediction for Movies"
 author: "Alex Knorr"
 status: publish
