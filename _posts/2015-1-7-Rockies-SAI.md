@@ -51,7 +51,7 @@ Log(Salary)_i = a+ beta_1*WAR_i + beta_2*Experience_i + beta_3*(Experience_i)^2 
  
 The independent variable is the log of the player's 2014 salary. beta_1 is the coefficient on WAR's impact on a player's salary on average. beta_2 allows salary to increase as a players experience (the difference in years between their age in 2014 and the age they began playing in the MLB) and beta_3 allows decreasing returns to salary as a player ages. Ultimately, this models a function that may exhibit a decreasing salary as a player grows older in the latter years of their career. beta_4 is the coefficient on the age at which a player enters the MLB, which makes our experience estimates conditional on the age at which they began gaining MLB experience. The first model we ran was on fielder players only:
  
-
+{% highlight r %}
 |            | Estimate| Std. Error| t value| Pr(>&#124;t&#124;)|
 |:-----------|--------:|----------:|-------:|------------------:|
 |(Intercept) |   13.263|      0.526|  25.206|              0.000|
@@ -59,7 +59,8 @@ The independent variable is the log of the player's 2014 salary. beta_1 is the c
 |age.start   |   -0.033|      0.022|  -1.546|              0.123|
 |exp         |    0.396|      0.032|  12.492|              0.000|
 |exp2        |   -0.014|      0.002|  -6.876|              0.000|
- 
+{% endhighlight %}
+
 Here we can see that an additional unit of WAR can increase a player's salary by almost 30% exp(beta_1)-1=0.291. We also see that experience increases a player's salary by approximately 0.4 log points but also indicates diminishing returns to experience for the coefficient on beta_3 of -0.01 log points. Using the median fielder experience of 5 years, this suggests that a player's salary is only predicted to increase by 29% exp(beta_2-2*beta_3)-1 with an additional year of experience. These variables are all significant at the 1% level. It appears beta_4 is negative which means players who start at an older age typically earn less over their career, however, this coefficient is somewhat insignificant. We see similar results for pitchers, however, using the pitcher - specific WAR score:
  
 
