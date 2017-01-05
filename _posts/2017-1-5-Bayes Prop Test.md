@@ -29,19 +29,19 @@ test
 
 
 {% highlight text %}
-## 
-## 	Bayesian First Aid proportion test
-## 
-## data: conversions out of impressions
-## number of successes:    20,   45
-## number of trials:     1500, 1000
-## Estimated relative frequency of success [95% credible interval]:
-##   Group 1: 0.014 [0.0084, 0.020]
-##   Group 2: 0.046 [0.033, 0.059]
-## Estimated group difference (Group 1 - Group 2):
-##   -0.03 [-0.046, -0.018]
-## The relative frequency of success is larger for Group 1 by a probability
-## of <0.001 and larger for Group 2 by a probability of >0.999 .
+ 
+ 	Bayesian First Aid proportion test
+ 
+ data: conversions out of impressions
+ number of successes:    20,   45
+ number of trials:     1500, 1000
+ Estimated relative frequency of success [95% credible interval]:
+   Group 1: 0.014 [0.0084, 0.020]
+   Group 2: 0.046 [0.033, 0.059]
+ Estimated group difference (Group 1 - Group 2):
+   -0.03 [-0.046, -0.018]
+ The relative frequency of success is larger for Group 1 by a probability
+ of <0.001 and larger for Group 2 by a probability of >0.999 .
 {% endhighlight %}
  
 The output shows the number of successes (conversions) and number of trials (impressions). Next the output provides the 95% credible interval for each group off of a MCMC simulation of 15,000 trials. This shows the conversion rate for each relative group. Next a simple subtraction of the difference in the credible intervals. Finally, an estimate of which group is larger.   
