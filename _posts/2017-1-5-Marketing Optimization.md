@@ -1,4 +1,5 @@
 ---
+layout: post
 status: publish
 published: true
 title: "The How and Why of Media Optimization"
