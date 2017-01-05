@@ -4,7 +4,7 @@ status: publish
 published: true
 title: "The How and Why of Media Optimization"
 author: "Alex Knorr"
-date: "January 3, 2017"
+date: "January 5, 2017"
 output: pdf_document
 ---
  
