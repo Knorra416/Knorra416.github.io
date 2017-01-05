@@ -1,5 +1,5 @@
 ---
-status: process
+status: not process
 published:
 title: "The How and Why of Media Optimization"
 author: "Alex Knorr"
