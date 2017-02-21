@@ -36,10 +36,10 @@ test
 ## number of successes:    20,   45
 ## number of trials:     1500, 1000
 ## Estimated relative frequency of success [95% credible interval]:
-##   Group 1: 0.014 [0.0084, 0.020]
+##   Group 1: 0.014 [0.0085, 0.020]
 ##   Group 2: 0.046 [0.033, 0.059]
 ## Estimated group difference (Group 1 - Group 2):
-##   -0.03 [-0.046, -0.018]
+##   -0.03 [-0.046, -0.017]
 ## The relative frequency of success is larger for Group 1 by a probability
 ## of <0.001 and larger for Group 2 by a probability of >0.999 .
 {% endhighlight %}
