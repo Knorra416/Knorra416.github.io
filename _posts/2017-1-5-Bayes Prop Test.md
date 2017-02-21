@@ -9,7 +9,7 @@ output: pdf_document
 ---
  
 ## Description 
-Part of my job as a Data Scientist is calculating and analyzing test results. A big area of testing is around ad performance for different groups, creative types, or placements. By using the [BayesianFirstAid]("https://github.com/rasmusab/bayesian_first_aid") package I can compare proportions and bring prio knowledge to the single test. This allows previous testing to play a part in future testing, and allows for results from smaller samples or shorter timelines. Below is an example of how the bayesian proportion test works from this package. A more detailed description can be found in the reference above. 
+Part of my job as a Data Scientist is calculating and analyzing test results. A big area of testing is around ad performance for different groups, creative types, or placements. By using the [BayesianFirstAid](https://github.com/rasmusab/bayesian_first_aid) package I can compare proportions and bring prio knowledge to the single test. This allows previous testing to play a part in future testing, and allows for results from smaller samples or shorter timelines. Below is an example of how the bayesian proportion test works from this package. A more detailed description can be found in the reference above. 
  
 ## Example
  
